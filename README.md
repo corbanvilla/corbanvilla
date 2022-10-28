@@ -1,4 +1,4 @@
-### Hi there 👋
+![Hello There, I'm Corban Villa](./CorbanBanner.svg)
 
 <!--
 **corbanvilla/corbanvilla** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
