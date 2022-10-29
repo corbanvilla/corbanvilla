@@ -28,9 +28,9 @@ Corban Villa is interested in blockchain, cybersecurity, data science and politi
   - Migrate custom backend => Directus
 
 ## 🫥 Facial Recognition
-- [AlHosLetMeIn](https://github.com/corbanvilla/AlHosLetMeIn) School project leveraging the Microsoft AR Hololens to identify faces, check a database whether they are vaccinated, then display a green or red rectangle around them.
-- [miles-bot](https://github.com/corbanvilla/miles) School project slack-bot to identify likely face matches for faster yearbook indexing and getting additional photos of students.
-- [Tutorial – Facial Recognition with Python (Cosine Similarity)](https://www.youtube.com/watch?v=cOZ9emGgiaY) [SheTech](https://shetechexplorer.com/) presentation about how the mathematics of Facial Recognition works (Cosine Similarity) and how to implement it in Python.
+- [AlHosLetMeIn:](https://github.com/corbanvilla/AlHosLetMeIn) School project leveraging the Microsoft AR Hololens to identify faces, check a database whether they are vaccinated, then display a green or red rectangle around them.
+- [miles-bot:](https://github.com/corbanvilla/miles) School project slack-bot to identify likely face matches for faster yearbook indexing and getting additional photos of students.
+- [Tutorial – Facial Recognition with Python (Cosine Similarity):](https://www.youtube.com/watch?v=cOZ9emGgiaY) [SheTech](https://shetechexplorer.com/) presentation about how the mathematics of Facial Recognition works (Cosine Similarity) and how to implement it in Python.
 
 ## 🔑 Cybersecurity
 - [Saintcon Container Village:](https://github.com/corbanvilla/saintcon-container-village) Saintcon 2020 Docker Security red-team and blue-team challenges.
