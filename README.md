@@ -37,6 +37,6 @@ Corban Villa is interested in blockchain, cybersecurity, data science and politi
 
 ## 🔧 Bluetooth Hacking
 - [BLE Tools:](https://github.com/corbanvilla/BLETools) scripts, tools, and Docker for reverse-engineering BLE devices.
-- [Bluetooth Detection:](https://github.com/corbanvilla/BluetoothDetection) scripts, tools for analyzing and logging nearby Bluetooth devices
-- [DEF CON 25 Presentation: Arm Mounted Weaponized Platform and Anime Viewer](https://youtu.be/4o9nKWI0lXM)
-- [SAINTCON 2018 Presentation: From basics to vulnerabilities](https://youtu.be/fAKizRuEQOw)
+- [Bluetooth Detection:](https://github.com/corbanvilla/BluetoothDetection) scripts, tools for analyzing and logging nearby Bluetooth devices.
+- [DEF CON 25 Presentation: Arm Mounted Weaponized Platform and Anime Viewer](https://youtu.be/4o9nKWI0lXM).
+- [SAINTCON 2018 Presentation: From basics to vulnerabilities](https://youtu.be/fAKizRuEQOw).
