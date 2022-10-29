@@ -1,6 +1,15 @@
 ![Hello There, I'm Corban Villa](./CorbanBanner.svg)
 
+## 🙋 `whoami`
+
 Corban Villa is interested in blockchain, cybersecurity, data science and political science. He currently works at [Owl Protocol](https://owlprotocol.xyz) developing Blockchain applications and attends the New York University campus in Abu Dhabi to study Computer Science and Political Science.
+
+### 📃 Resume
+- [Check out my resume](./CorbanVillaResume.pdf)
+### 💬 Contact
+- [📨 corbanvilla@gmail.com](mailto:corbanvilla@gmail.com)
+- [👥 Linkedin](https://www.linkedin.com/in/corbanvilla/)
+- [🐦 Twitter](https://twitter.com/Animcogn)
 
 # 🧑‍🏫 Projects
 
