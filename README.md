@@ -2,14 +2,20 @@
 
 # 🙋 `whoami`
 
-Corban Villa is interested in blockchain, cybersecurity, data science and political science. He currently works at [Owl Protocol](https://owlprotocol.xyz) developing Blockchain applications and attends the New York University campus in Abu Dhabi to study Computer Science and Political Science.
+**Corban Villa** is interested in **Blockchain**, **Cybersecurity**, **Data science** and **Political science**. He currently works at [Owl Protocol](https://owlprotocol.xyz) developing Blockchain applications and attends the New York University campus in Abu Dhabi to study Computer Science and Political Science.
 
 ### 📃 Resume
-- [Check out my resume](./CorbanVillaResume.pdf)
+[📎 Check out my resume.](./CorbanVillaResume.pdf)
 ### 💬 Contact
 - [📨 corbanvilla@gmail.com](mailto:corbanvilla@gmail.com)
 - [👥 Linkedin](https://www.linkedin.com/in/corbanvilla/)
 - [🐦 Twitter](https://twitter.com/Animcogn)
+
+### ✍️ Writing Highlights
+- [🪙 Web3.0 Internet Society](https://www.thegazelle.org/issue/221/opinion/webthree-internet-society)
+- [🤖 Beyond the Hype: The Metaverse](https://www.thegazelle.org/issue/227/opinion/hype-beyond-metaverse)
+
+[📚 Check out the rest of my work.](https://www.thegazelle.org/staff-member/corban-villa)
 
 # 🧑‍🏫 Projects
 
@@ -34,6 +40,7 @@ Corban Villa is interested in blockchain, cybersecurity, data science and politi
 
 ## 🔑 Cybersecurity
 - [Saintcon Container Village:](https://github.com/corbanvilla/saintcon-container-village) Saintcon 2020 Docker Security red-team and blue-team challenges.
+- [NYUAD Cyberwarfare:](https://github.com/corbanvilla/nyuad_cyberwarfare) School project analyzing VOIP services on U.S. Military and DoD subnets with Shodan.
 
 ## 🔧 Bluetooth Hacking
 - [BLE Tools:](https://github.com/corbanvilla/BLETools) scripts, tools, and Docker for reverse-engineering BLE devices.
