@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import ForceGraph from './ForceGraph'
+import dynamic from 'next/dynamic'
 
 import CorbanPhoto from '../public/corban.jpg'
 import GitHubIcon from '../public/social/github.svg'
@@ -8,6 +8,8 @@ import LinkedInIcon from '../public/social/linkedin.svg'
 import TwitterIcon from '../public/social/twitter.svg'
 import MailIcon from '../public/social/mail.svg'
 import Links from '../links.json'
+
+const DynamicForceGraph = dynamic(() => import('./ForceGraph'), { ssr: false });
 
 const Landing = () => {
     return (
@@ -26,7 +28,7 @@ const Landing = () => {
 const Work = () => {
     return (
         <div className="flex flex-col items-center justify-center w-full h-[70vh] gap-7">
-            <ForceGraph/>
+            <DynamicForceGraph/>
         </div>
     )
 }
