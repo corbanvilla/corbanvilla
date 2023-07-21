@@ -14,7 +14,7 @@ const Landing = () => {
         <div className="flex flex-col items-center justify-center w-full h-[70vh] gap-7">
             <p className="text-7xl font-thin">
                 <span className="opacity-0 animate-fade-in-150">Hello World,</span>
-                <span className="opacity-0 animate-fade-in-500">👋 I'm</span>
+                <span className="opacity-0 animate-fade-in-500">👋 I&apos;m</span>
             </p>
             <p className="text-8xl font-extralight opacity-0 animate-fade-in-1000">
                 Corban Villa
