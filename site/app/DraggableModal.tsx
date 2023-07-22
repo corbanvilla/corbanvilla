@@ -39,7 +39,6 @@ const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boole
                 </div>
                 <ReactMarkdown
                     className="font-extralight text-gray-600 pt-2"
-                    children={description}
                     components={{
                         a: ({ href, children }: { href?: string, children: any }) => (
                             <>
@@ -52,7 +51,9 @@ const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boole
                             </>
                         ),
                     }}
-                />
+                >
+                    {description}
+                </ReactMarkdown>
             </div>
         </Draggable>
         </div>
