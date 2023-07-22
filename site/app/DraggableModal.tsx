@@ -8,12 +8,7 @@ import CloseIcon from '../public/icons/close.svg';
 
 
 const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boolean, onClose: MouseEventHandler<HTMLButtonElement>, title: String, description: String }) => {
-    if (!isOpen) {
-        return null;
-    }
-    
     const [position, setPosition] = useState({x: - window.innerWidth * (1/5), y: window.innerHeight * (1/6)});
-    console.log(`Position: ${position.x}, ${position.y}`);
 
     useEffect(() => {
         const calculatePosition = () => {
@@ -26,26 +21,25 @@ const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boole
         window.addEventListener('resize', calculatePosition);
     }, []);
 
-
-  return (
-    <div className="flex items-center justify-center z-10 hover:cursor-pointer">
-      <Draggable defaultPosition={position}>
-        <div className="flex flex-col p-6 items-start bg-white rounded-lg shadow-lg relative w-[400px]">
-            <div className="flex flex-row justify-between w-full">
-                <h2 className="font-light text-2xl">{title}</h2>
-                <button onClick={onClose}>
-                    <Image
-                        src={CloseIcon}
-                        height={20}
-                        width={20}
-                        alt={"close"}
-                    />
-                </button>
+    return (
+        <div className={`flex items-center justify-center z-10 hover:cursor-pointer ${isOpen ? "block" : "hidden"}`}>
+        <Draggable defaultPosition={position}>
+            <div className="flex flex-col p-6 items-start bg-white rounded-lg shadow-lg relative w-[400px]">
+                <div className="flex flex-row justify-between w-full">
+                    <h2 className="font-light text-2xl">{title}</h2>
+                    <button onClick={onClose}>
+                        <Image
+                            src={CloseIcon}
+                            height={20}
+                            width={20}
+                            alt={"close"}
+                        />
+                    </button>
+                </div>
+                <p className="pt-2 font-extralight text-gray-600">{description}</p>
             </div>
-            <p className="pt-2 font-extralight text-gray-600">{description}</p>
+        </Draggable>
         </div>
-      </Draggable>
-    </div>
-  );
+    );
 };
 export default DraggableModal;
