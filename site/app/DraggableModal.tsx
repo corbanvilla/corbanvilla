@@ -3,11 +3,12 @@
 import Image from 'next/image';
 import { useEffect, useState, MouseEventHandler } from 'react';
 import Draggable from 'react-draggable';
+import ReactMarkdown from 'react-markdown'
+import StyledLink from '@/components/StyledLink';
 
 import CloseIcon from '../public/icons/close.svg';
 
-
-const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boolean, onClose: MouseEventHandler<HTMLButtonElement>, title: String, description: String }) => {
+const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boolean, onClose: MouseEventHandler<HTMLButtonElement>, title: string, description: string }) => {
     const [position, setPosition] = useState({x: - window.innerWidth * (1/5), y: window.innerHeight * (1/6)});
 
     useEffect(() => {
@@ -36,7 +37,22 @@ const DraggableModal = ({ isOpen, onClose, title, description }: { isOpen: boole
                         />
                     </button>
                 </div>
-                <p className="pt-2 font-extralight text-gray-600">{description}</p>
+                <ReactMarkdown
+                    className="font-extralight text-gray-600 pt-2"
+                    children={description}
+                    components={{
+                        a: ({ href, children }: { href?: string, children: any }) => (
+                            <>
+                                <StyledLink href={href || ''} className="py-2" >{children}</StyledLink>
+                            </>
+                        ),
+                        p: ({ children }: { children: any }) => (
+                            <>
+                                <div className="mb-2">{children}</div>
+                            </>
+                        ),
+                    }}
+                />
             </div>
         </Draggable>
         </div>
