@@ -1,133 +1,123 @@
 "use client"
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import ForceGraph2D from 'react-force-graph-2d';
+import { ForceGraphMethods } from 'react-force-graph-2d';
+
+import DraggableModal from './DraggableModal';
+import data from '../data/nodes';
+
+const NODE_REL_SIZE = 4;
+
+
+
 
 export default function ForceGraph() {
 
     const [graphHeight, setGraphHeight] = useState(window.innerHeight * 0.7);
     const [graphWidth, setGraphWidth] = useState(window.innerWidth);
+    const [showModal, setShowModal] = useState(false);
+    const [modalTitle, setModalTitle] = useState('');
+    const [modalDescription, setModalDescription] = useState('');
 
+    const forceGraphRef = useRef();
+
+    // Setup function
     useEffect(() => {
+        // Enable resizing
         function handleResize() {
             setGraphHeight(window.innerHeight * 0.7);
             setGraphWidth(window.innerWidth);
         }
-
         window.addEventListener('resize', handleResize);
 
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+        if (forceGraphRef.current) {
+            let fg: ForceGraphMethods = forceGraphRef.current;
+            // fg.d3Force('center', forceCenter(10));
+            // fg.d3Force('link', null);
+        }
 
-    const data = {
-        nodes: [
-            // Creative
-            { 
-                "id": "1",
-                "name": "Click me",
-                "text": "The Gazelle",
-                "val": 10 
-            },
-            { 
-                "id": "2",
-                "name": "Click me",
-                "text": "Louvre Abu Dhabi",
-                "val": 5 
-            },
-            // Cybersecurity
-            {
-                "id": "3",
-                "name": "Click me",
-                "text": "Bluetooth Hacking",
-                "val": 4
-            },
-            {
-                "id": "4",
-                "name": "Click me",
-                "text": "Container Hacking",
-                "val": 7
-            },
-            {
-                "id": "5",
-                "name": "Click me",
-                "text": "Copilot Hacking",
-                "val": 10
-            },
-            // SWE
-            {
-                "id": "6",
-                "name": "Click me",
-                "text": "Facial Recognition",
-                "val": 10
-            },
-            // Blockchain
-            {
-                "id": "7",
-                "name": "Click me",
-                "text": "Smart Contracts",
-                "val": 4
-            },
-        ],
-        links: [
-            // Creative
-            {
-                "source": "1",
-                "target": "2"
-            },
-            // Cybersecurity
-            {
-                "source": "3",
-                "target": "4"
-            },
-            {
-                "source": "3",
-                "target": "5"
-            },
-            {
-                "source": "4",
-                "target": "5"
-            },
-            // SWE -> Blockchain
-            {
-                "source": "6",
-                "target": "7"
-            },
-            // SWE -> Gazelle
-            {
-                "source": "6",
-                "target": "1"
-            },
-            // SWE -> Container Hacking
-            {
-                "source": "6",
-                "target": "4"
-            },
-        ],
-    };
+
+    }, []);
 
     return (
         <>
+            <DraggableModal isOpen={showModal} onClose={() => setShowModal(false)} title={modalTitle} description={modalDescription} />
             <ForceGraph2D
                 graphData={data}
+                ref={forceGraphRef}
                 enableZoomInteraction={false}
                 enablePanInteraction={false}
-                // nodeRelSize={10}
+                nodeRelSize={NODE_REL_SIZE}
                 minZoom={10}
                 nodeColor={() => '#006596'}
                 height={graphHeight}
                 width={graphWidth}
+                onEngineTick={() => {
+                    if (!forceGraphRef.current) {
+                        return
+                    }
+                    const container: ForceGraphMethods = forceGraphRef.current;
+                    data.nodes.forEach((node: any) => {
+                        const coordinates = container.graph2ScreenCoords(node.x, node.y);
+                        const boxWidth = graphWidth;
+                        const boxHeight = graphHeight;
+                        const nodeRadius = NODE_REL_SIZE * node.val;
+                        const margin = 15; // how to get node radius? If we can get it we don't need margin
+
+                        // right boundary
+                        if (coordinates.x > (boxWidth - nodeRadius - margin)) {
+                            const desiredScreenX = boxWidth - nodeRadius - margin;
+                            const graphUnits = container.screen2GraphCoords(desiredScreenX, node.y);
+                            node.x = graphUnits.x;
+                        }
+
+                        // left boundary
+                        if (coordinates.x < 0 + nodeRadius + margin) {
+                            const desiredScreenX = nodeRadius + margin;
+                            const graphUnits = container.screen2GraphCoords(desiredScreenX, node.y);
+                            node.x = graphUnits.x;
+                        }
+
+                        // bottom boundary
+                        if (coordinates.y > (boxHeight - nodeRadius - margin)) {
+                            const desiredScreenY = boxHeight - nodeRadius - margin;
+                            const graphUnits = container.screen2GraphCoords(node.x, desiredScreenY);
+                            node.y = graphUnits.y;
+                        }
+
+                        // top boundary
+                        if (coordinates.y < 0 + nodeRadius + margin) {
+                            const desiredScreenY = nodeRadius + margin;
+                            const graphUnits = container.screen2GraphCoords(node.x, desiredScreenY);
+                            node.y = graphUnits.y;
+                        }
+                    });
+                }}
                 onNodeHover={(node, prevNode) =>  {
+                    // Node is being hovered
                     if (node?.val) {
                         node.originalVal = node.val;
                         node.val = node.val + node.val * 0.25;
                         document.body.style.cursor = 'pointer';
+
+                        // Freeze the node
+                        if (node.vx &&  node.vy) {
+                            node.vx = 0;
+                            node.vy = 0;
+                        }
                     }
 
+                    // Node is no longer hovered
                     if (prevNode) {
                         prevNode.val = prevNode.originalVal;
                         document.body.style.cursor = 'default';
+
+                        if (forceGraphRef.current) {
+                            let fg: ForceGraphMethods = forceGraphRef.current;
+                            fg.d3ReheatSimulation();
+                        }
                     }
-                    
                 }}
                 nodeCanvasObject={(node, ctx, globalScale) => {
                     const label = node.text;
@@ -154,6 +144,11 @@ export default function ForceGraph() {
                     ctx.fillText(label, node.x || 0, node.y || 0);
                 }}
                 nodeCanvasObjectMode={() => 'after'}
+                onNodeClick={(node) => {
+                    setModalTitle(node.title);
+                    setModalDescription(node.description);
+                    setShowModal(true);
+                }}
             />
         </>
     )

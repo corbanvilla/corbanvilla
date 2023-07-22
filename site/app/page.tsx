@@ -7,8 +7,9 @@ import GitHubIcon from '../public/social/github.svg'
 import LinkedInIcon from '../public/social/linkedin.svg'
 import TwitterIcon from '../public/social/twitter.svg'
 import MailIcon from '../public/social/mail.svg'
-import Links from '../links.json'
+import Links from '../data/links'
 
+// https://github.com/vasturiano/react-force-graph/issues/155
 const DynamicForceGraph = dynamic(() => import('./ForceGraph'), { ssr: false });
 
 const Landing = () => {
