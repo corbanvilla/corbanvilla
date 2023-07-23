@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
+import { Metadata } from 'next'
 
 import CorbanPhoto from '../public/corban.jpg'
 import GitHubIcon from '../public/social/github.svg'
@@ -11,6 +12,14 @@ import Links from '../data/links'
 
 // https://github.com/vasturiano/react-force-graph/issues/155
 const DynamicForceGraph = dynamic(() => import('./ForceGraph'), { ssr: false });
+
+export const metadata: Metadata = {
+    title: 'Corban Villa',
+    description: 'Corban Villa\'s personal website',
+    openGraph: {
+        images: '/corban.jpg',
+    }
+}
 
 const Landing = () => {
     return (
@@ -28,7 +37,7 @@ const Landing = () => {
 
 const Work = () => {
     return (
-        <div className="flex flex-col items-center justify-center w-full h-[70vh] gap-7">
+        <div className="flex flex-col items-center justify-center w-full gap-7">
             <DynamicForceGraph/>
         </div>
     )
