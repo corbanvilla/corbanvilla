@@ -10,15 +10,15 @@ export default function Nav() {
                 </Link>
                 <div>
                     <ul className="flex flex-row gap-6 font-extralight">
-                        <Link href="#portfolio">
-                            <li className="text-xl">portfolio</li>
-                        </Link>
-                        <Link href="#about">
-                            <li className="text-xl">about</li>
-                        </Link>
-                        <Link href="#contact">
-                            <li className="text-xl">contact</li>
-                        </Link>
+                        <li>
+                            <Link className="text-xl" href="#portfolio">portfolio</Link>
+                        </li>
+                        <li>
+                            <Link className="text-xl" href="#about">about</Link>
+                        </li>
+                        <li>
+                            <Link className="text-xl" href="#contact">contact</Link>
+                        </li>
                         {/* <li className="text-xl">blog</li> */}
                     </ul>
                 </div>

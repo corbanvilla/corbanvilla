@@ -14,8 +14,10 @@ import Links from '../data/links'
 const DynamicForceGraph = dynamic(() => import('./ForceGraph'), { ssr: false });
 
 export const metadata: Metadata = {
+    metadataBase: new URL('https://corbanvilla.com/'),
     title: 'Corban Villa',
     description: 'Corban Villa\'s personal website',
+    robots: '*',
     openGraph: {
         images: '/corban.jpg',
     }
