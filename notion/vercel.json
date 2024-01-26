@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "https://corbanvilla.notion.site/:path*"
+    },
+    {
+      "source": "/:path*/",
+      "destination": "https://corbanvilla.notion.site/:path*/"
+    }
+  ]
+}
