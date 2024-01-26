@@ -50,7 +50,7 @@
 - [MerkleDB:](https://github.com/owlprotocol/merkledb) Hackathon project to bring Web2 data into Web3 using Merkle Trees for verification and compression.
 - [Web3-Bot:](https://github.com/owlprotocol/web3-bot) Twitter bot to watch for shoutouts and reward users who share a project on Twitter.
 
-### ✍️ Writing Highlights
+## ✍️ Writing Highlights
 
 - [Should AI Reflect Us, Or Should We Reflect AI?](https://www.thegazelle.org/issue/248/ai-bias-opinion)
 - [Can Academia Keep Up With ChatGPT?](https://www.thegazelle.org/issue/238/can-academia-keep-up-with-chatgpt)
