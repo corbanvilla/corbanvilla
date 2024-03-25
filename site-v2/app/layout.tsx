@@ -86,7 +86,7 @@ export default function RootLayout({
           </div>
           {/* Single Pixel Line */}
           <div className="w-px h-128 bg-gray-200 hidden md:block" />
-          <div className="w-screen h-px bg-gray-200 block md:hidden" />
+          <div className="w-full h-px bg-gray-200 block md:hidden" />
           {/* Right content */}
           <div className="md:w-[32rem]">
             {children}
