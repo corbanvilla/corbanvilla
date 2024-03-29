@@ -5,7 +5,7 @@ import RenderedMarkdown from '../markdown';
 
 export function generateStaticParams() {
   return [
-    { name: 'publications' },
+    { name: 'research' },
   ]
 }
 
