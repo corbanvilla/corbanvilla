@@ -6,7 +6,7 @@
 
 ### 📃 Resume
 
-[📎 Check out my resume.](./CorbanVillaResume.pdf)
+[📎 Check out my resume.](https://resources.corbanvilla.com/CorbanVillaResume.pdf)
 
 ### 💬 Contact
 
