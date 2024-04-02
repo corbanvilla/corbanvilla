@@ -78,7 +78,7 @@ export default function RootLayout({
             <div className="flex flex-row md:flex-col gap-3 font-mono justify-between md:justify-normal w-full">
               <NavigationLink href="/" title="home" notarget={true} className="hidden md:block" />
               <NavigationLink href="/research" title="research" notarget={true} />
-              <NavigationLink href="https://github.com/corbanvilla/corbanvilla/blob/main/CorbanVillaResume.pdf" title="resume" />
+              <NavigationLink href="https://resources.corbanvilla.com/CorbanVillaResume.pdf" title="resume" />
               <NavigationLink href="mailto:hello@corbanvilla.com" title="contact" />
             </div>
             {/* Icons */}
