@@ -48,6 +48,7 @@ export default function RootLayout({
         <div className="flex flex-row gap-4 justify-end md:justify-start">
           <Icon src="/icons/github.svg" alt="GitHub" href="https://github.com/corbanvilla"/>
           <Icon src="/icons/twitter.svg" alt="Twitter" href="https://twitter.com/Animcogn"/>
+          <Icon src="/icons/scholar.svg" alt="Google Scholar" href="https://scholar.google.com/citations?hl=en&user=LBFqsJcAAAAJ"/>
         </div>
       </div>
     )
