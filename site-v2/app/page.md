@@ -6,9 +6,10 @@ He currently works in the **[New York University Abu Dhabi Center for Cybersecur
 
 # Recently
 
-- **July 10th, 2024:** Submission to [NDSS '2025](https://www.ndss-symposium.org/ndss2025/). 🤞
-- **April 30th, 2024:** First time submitting a paper as a first author to [CCS '2024](https://www.sigsac.org/ccs/CCS2024/home.html). Fingers crossed! 🥳
-- **March 15th, 2024:** First paper submission to [PETS 2024](https://petsymposium.org/)! 🎉
+- **July 15th, 2024:** Attended [PETS 2024](https://petsymposium.org/2024/) with [Shujaat Mirza](https://shujaatmirza.com/) to introduce [our new privacy paper](https://petsymposium.org/popets/2024/popets-2024-0109.pdf). We were honored to be named a runner-up for the Andreas Pfitzmann Best Student Paper Award!
+- **July 10th, 2024:** Submission to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). 🤞
+<!-- - **April 30th, 2024:** First time submitting a paper as a first author to [CCS '2024](https://www.sigsac.org/ccs/CCS2024/home.html). Fingers crossed! 🥳 -->
+<!-- - **March 15th, 2024:** First paper submission to [PETS 2024](https://petsymposium.org/)! 🎉 -->
 - **March 5th, 2024:** Volunteering at [ACNS 2024](https://wp.nyu.edu/acns2024/), hosted here at NYU Abu Dhabi. Loved [Nadia Heninger's](https://cseweb.ucsd.edu/~nadiah/) keynote on finding cryptographic vulnerabilities in the wild.
 - **November 9th, 2024:** First time at [CSAW](https://www.csaw.io/). [DScope](https://www.usenix.org/conference/usenixsecurity23/presentation/pauley) was definitely a favorite from the poster sessions.
 - **August 14th, 2023:** Loving the talks this year at the [DEFCON AI Village](https://aivillage.org/).
