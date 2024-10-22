@@ -6,6 +6,7 @@ He currently works in the **[New York University Abu Dhabi Center for Cybersecur
 
 # Recently
 
+- **September 9th, 2024:** Officially disclosed [my first vulnerability](https://certvde.com/en/advisories/VDE-2024-046/) 🥳.
 - **July 15th, 2024:** Attended [PETS 2024](https://petsymposium.org/2024/) with [Shujaat Mirza](https://shujaatmirza.com/) to introduce [our new privacy paper](https://petsymposium.org/popets/2024/popets-2024-0109.pdf). We were honored to be named a runner-up for the Andreas Pfitzmann Best Student Paper Award!
 - **July 10th, 2024:** Submission to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). 🤞
 <!-- - **April 30th, 2024:** First time submitting a paper as a first author to [CCS '2024](https://www.sigsac.org/ccs/CCS2024/home.html). Fingers crossed! 🥳 -->
