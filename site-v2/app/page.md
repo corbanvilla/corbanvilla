@@ -6,9 +6,10 @@ He currently works in the **[New York University Abu Dhabi Center for Cybersecur
 
 # Recently
 
-- **September 9th, 2024:** Officially disclosed [my first vulnerability](https://certvde.com/en/advisories/VDE-2024-046/) 🥳.
+- **November 21st, 2024:** Received my first research paper was accepted to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). Looking forward to presenting it in San Diego! 🎉
+- **September 9th, 2024:** Officially disclosed [my first vulnerability](https://certvde.com/en/advisories/VDE-2024-046/). 🥳
 - **July 15th, 2024:** Attended [PETS 2024](https://petsymposium.org/2024/) with [Shujaat Mirza](https://shujaatmirza.com/) to introduce [our new privacy paper](https://petsymposium.org/popets/2024/popets-2024-0109.pdf). We were honored to be named a runner-up for the Andreas Pfitzmann Best Student Paper Award!
-- **July 10th, 2024:** Submission to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). 🤞
+<!-- - **July 10th, 2024:** Submission to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). 🤞 -->
 <!-- - **April 30th, 2024:** First time submitting a paper as a first author to [CCS '2024](https://www.sigsac.org/ccs/CCS2024/home.html). Fingers crossed! 🥳 -->
 <!-- - **March 15th, 2024:** First paper submission to [PETS 2024](https://petsymposium.org/)! 🎉 -->
 - **March 5th, 2024:** Volunteering at [ACNS 2024](https://wp.nyu.edu/acns2024/), hosted here at NYU Abu Dhabi. Loved [Nadia Heninger's](https://cseweb.ucsd.edu/~nadiah/) keynote on finding cryptographic vulnerabilities in the wild.

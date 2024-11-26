@@ -1,5 +1,8 @@
 # Publications
 
+- **ICS-QUARTZ: Scan Cycle-Aware and Vendor-Agnostic Fuzzing for Industrial Control Systems:** <br>
+<sup>To appear in NDSS 2025 Symposiumn.</sup>
+
 - **[Media talks Privacy: Unraveling a Decade of Privacy Discourse around the World.](https://petsymposium.org/popets/2024/popets-2024-0109.pdf)** <br>
 <sup>In Proceedings on Privacy Enhancing Technologies, 2024.</sup>
 <!-- <sup>Shujaat Mirza, Corban Villa, Christina Pöpper.</sup> -->
