@@ -1,4 +1,4 @@
-# Publications
+# Peer-Reviewed Publications
 
 - **ICS-QUARTZ: Scan Cycle-Aware and Vendor-Agnostic Fuzzing for Industrial Control Systems:** <br>
   <sup>To appear in the NDSS 2025 Symposiumn.</sup>
