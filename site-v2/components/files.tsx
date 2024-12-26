@@ -1,6 +1,43 @@
 import fs from 'fs';
 import path from 'path';
 
+function listDirsRecursively(currentDir: string): string[] {
+  const results: string[] = [];
+  const files = fs.readdirSync(currentDir);
+  files.forEach(file => {
+    const filePath = path.join(currentDir, file);
+    const stat = fs.statSync(filePath);
+    if (stat.isDirectory()) {
+      results.push(filePath);
+      results.push(...listDirsRecursively(filePath));
+    }
+  });
+  return results;
+}
+
+export function listDirsRecursivelyRelative(currentDir: string): string[] {
+  return listDirsRecursively(currentDir).map(dir => path.relative(currentDir, dir));
+}
+
+function listFilesRecursively(currentDir: string): string[] {
+  const results: string[] = [];
+  const files = fs.readdirSync(currentDir);
+  files.forEach(file => {
+    const filePath = path.join(currentDir, file);
+    const stat = fs.statSync(filePath);
+    if (stat.isDirectory()) {
+      results.push(...listFilesRecursively(filePath));
+    } else {
+      results.push(filePath);
+    }
+  });
+  return results;
+}
+
+export function listMarkdownFilesRecursive(dir: string): string[] {
+  return listFilesRecursively(dir).map(file => path.relative(dir, file)).filter(file => file.endsWith('.md'));
+}
+
 export function listMarkdownFiles(dir: string) {
   const files = fs.readdirSync(dir);
   return files.filter(file => file.endsWith('.md'));
