@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation';
-import { readFromFile } from '../../../files';
-import RenderedMarkdown from '../../../markdown';
+import { readFromFile } from '../../../../components/files';
+import RenderedMarkdown from '../../../../components/markdown';
 
 const routeDefinitions = [
-  'UTM/CS6575',
+  'utm/cs6575',
 ]
 
 export function generateStaticParams() {
@@ -26,19 +26,17 @@ export default function Page({ params }: { params: { path: string[] } }) {
     notFound();
 
   // Only allow the route definitions we have (no directory traversal)
-  const pathString = params.path.join('/');
+  const pathString = params.path.join('/').toLowerCase();
   if (!routeDefinitions.includes(pathString))
     notFound();
+  const markdownFile = `app/docs/${pathString}.md`;
 
-
-  // const markdownFile = `app/[name]/${params.name}.md`;
-
-  let markdown: string = "asdf";
-  // try {
-  //   markdown = readFromFile(markdownFile);
-  // } catch (e) {
-  //   notFound();
-  // }
+  let markdown: string;
+  try {
+    markdown = readFromFile(markdownFile);
+  } catch (e) {
+    notFound();
+  }
 
   return (
     <RenderedMarkdown content={markdown} />
