@@ -15,7 +15,8 @@ export function generateStaticParams() {
   }));
 }
 
-export default function Page({ params }: { params: { path: string[] } }) {
+export default async function Page(props: { params: Promise<{ path: string[] }> }) {
+  const params = await props.params;
   const pathString = params.path.join('/');
 
   // File rendering
@@ -36,5 +37,4 @@ export default function Page({ params }: { params: { path: string[] } }) {
   return (
     <RenderedDocsMarkdown className="" content={markdown} />
   );
-
 }
