@@ -7,7 +7,6 @@ import TableOfContents from "@/components/tableOfContents";
 import { buildDocTree } from "@/components/files";
 import { currentDir } from "@/components/securePaths";
 
-// TODO - refactor to page file
 const dir = currentDir(import.meta.url);
 const docTree = buildDocTree(dir);
 
@@ -39,9 +38,7 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
   const tree: TreeViewBaseItem[] = convertTree(docTree);
-  console.log(JSON.stringify(tree));
 
   return (
     <div className="m-4 flex flex-col gap-4">
@@ -60,10 +57,10 @@ export default function Layout({
       </div>
       {/* Right content */}
       <div className="w-full h-px bg-gray-200 block" />
-      <div className="flex flex-row justify-center gap-4 md:gap-8">
+      <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
         <TableOfContents items={tree} />
         <div className="w-px h-128 bg-gray-200" />
-        <div className="md:w-[32rem]">
+        <div className="w-full">
           {children}
         </div>
       </div>

@@ -1,8 +1,7 @@
 "use client"
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import { TreeViewBaseItem } from '@mui/x-tree-view/models';
 import { RichTreeView } from '@mui/x-tree-view/RichTreeView';
 import { TreeItem, treeItemClasses } from '@mui/x-tree-view/TreeItem';
@@ -83,11 +82,12 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
         apiRef.current?.selectItem({event, itemId, keepExistingSelection, shouldBeSelected });
       }, (delay += delayIncrement));
       
-    }, []);
+    }, [path, apiRef]);
     
     return (
       <div className="flex flex-col">
-        <Box sx={{ minHeight: 352, minWidth: 250 }}>
+        <h1 className="text-2xl font-medium">Table of Contents</h1>
+        <Box sx={{ minWidth: 250 }}>
             {/* @ts-ignore */}
             <RichTreeView 
               /* @ts-ignore */

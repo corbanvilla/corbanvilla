@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { readFromFile, listMarkdownFilesRecursive, listDirsRecursivelyRelative, buildDocTree } from '../../../components/files';
-import RenderedMarkdown from '../../../components/markdown';
+import { RenderedDocsMarkdown } from '../../../components/markdown';
 import { currentDir } from '@/components/securePaths';
 
 const dir = currentDir(import.meta.url);
@@ -34,7 +34,7 @@ export default function Page({ params }: { params: { path: string[] } }) {
 
   const markdown = readFromFile(markdownFile);
   return (
-    <RenderedMarkdown content={markdown} />
+    <RenderedDocsMarkdown className="" content={markdown} />
   );
 
 }
