@@ -87,8 +87,8 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
     
     return (
       <div className="flex flex-col">
-        <StyledLink href={DOCS_URL_PREFIX} className="text-black">
-          <h1 className="text-2xl font-medium">Table of Contents</h1>
+        <StyledLink href={DOCS_URL_PREFIX} className="text-black" self={true}>
+          <h1 className="text-2xl font-medium text-black">Table of Contents</h1>
         </StyledLink>
         <Box sx={{ minWidth: 250 }}>
             {/* @ts-ignore */}
