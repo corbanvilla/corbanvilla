@@ -1,4 +1,5 @@
 "use client"
+import { StyledLink } from './styledLink';
 import { useEffect, useMemo } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
@@ -86,7 +87,9 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
     
     return (
       <div className="flex flex-col">
-        <h1 className="text-2xl font-medium">Table of Contents</h1>
+        <StyledLink href={DOCS_URL_PREFIX} className="text-black">
+          <h1 className="text-2xl font-medium">Table of Contents</h1>
+        </StyledLink>
         <Box sx={{ minWidth: 250 }}>
             {/* @ts-ignore */}
             <RichTreeView 
