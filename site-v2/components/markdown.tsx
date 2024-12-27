@@ -48,10 +48,11 @@ export function RenderedDocsMarkdown({ content, className }: { content: string, 
               // Determine inline vs. block code by checking for a position attribute
               const isInline = node?.children[0]?.position !== undefined;
 
-              if (!isInline) {
-                return (<CodeBlockWithCopy match={match}>{children}</CodeBlockWithCopy>)
-              }
-              return <code className="bg-gray-100 rounded px-1">{children}</code>;
+              return isInline ? (
+                <code className="bg-gray-100 rounded px-1">{children}</code>
+              ) : (
+                <CodeBlockWithCopy match={match}>{children}</CodeBlockWithCopy>
+              );
             },
         }}
       >

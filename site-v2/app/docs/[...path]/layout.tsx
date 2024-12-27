@@ -57,10 +57,10 @@ export default function Layout({
       </div>
       {/* Right content */}
       <div className="w-full h-px bg-gray-200 block" />
-      <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8">
+      <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 w-full">
         <TableOfContents items={tree} />
         <div className="w-px h-128 bg-gray-200" />
-        <div className="w-full">
+        <div className="w-full md:w-[30rem]">
           {children}
         </div>
       </div>

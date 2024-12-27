@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable}`}>
       <body className="flex justify-center items-center">
-        <div className="w-[52rem]">
+        <div className="w-full md:w-[52rem]">
           {children}
         </div>
       </body>

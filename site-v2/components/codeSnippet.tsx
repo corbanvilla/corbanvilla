@@ -16,7 +16,7 @@ export function CodeBlockWithCopy ({ children, match }: { children: ReactNode, m
     };
   
     return (
-      <div className="flex flex-col my-4">
+      <div className="flex flex-col my-4 w-full">
         <div className="bg-slate-200 flex -mb-3 z-10">
           <button onClick={handleCopy} className="bg-gray-200 hover:bg-gray-300 active:bg-gray-200 text-sm rounded ml-auto mr-1 my-1 px-1">
             {isCopied ? 'Copied!' : 'Copy'}
