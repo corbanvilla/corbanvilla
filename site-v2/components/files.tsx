@@ -1,6 +1,21 @@
 import fs from 'fs';
 import path from 'path';
 
+export function buildDocTree(dir: string) {
+  const tree: any = {};
+  const files = fs.readdirSync(dir);
+  files.forEach(file => {
+    const filePath = path.join(dir, file);
+    const stat = fs.statSync(filePath);
+    if (stat.isDirectory()) {
+      tree[file] = buildDocTree(filePath);
+    } else if (file.endsWith('.md') && file !== 'README.md') {
+      tree[file] = null;
+    }
+  });
+  return tree;
+}
+
 function listDirsRecursively(currentDir: string): string[] {
   const results: string[] = [];
   const files = fs.readdirSync(currentDir);

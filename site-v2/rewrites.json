@@ -1,3 +1,4 @@
 {
-    "/": "/home"
+    "/": "/home",
+    "/docs": "/docs/README"
 }

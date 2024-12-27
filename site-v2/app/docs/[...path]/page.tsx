@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { readFromFile, listMarkdownFilesRecursive, listDirsRecursivelyRelative } from '../../../components/files';
+import { readFromFile, listMarkdownFilesRecursive, listDirsRecursivelyRelative, buildDocTree } from '../../../components/files';
 import RenderedMarkdown from '../../../components/markdown';
 import { currentDir } from '@/components/securePaths';
 
@@ -16,22 +16,25 @@ export function generateStaticParams() {
 }
 
 export default function Page({ params }: { params: { path: string[] } }) {
-  const pathString = params.path.join('/').toLowerCase();
+  const pathString = params.path.join('/');
 
   // File rendering
+  let markdownFile: string;
   if (filepaths.includes(pathString)) {
-    const markdownFile = `${dir}/${pathString}.md`;
-    let markdown = readFromFile(markdownFile);
-    return (
-      <RenderedMarkdown content={markdown} />
-    );
+    markdownFile = `${dir}/${pathString}.md`;
 
   // Directory rendering
   } else if (dirpaths.includes(pathString)) {
-    return (<>Path dir</>)
-  
+    markdownFile = `${dir}/${pathString}/README.md`;
+
   // Path not found
   } else {
     notFound();
   }
+
+  const markdown = readFromFile(markdownFile);
+  return (
+    <RenderedMarkdown content={markdown} />
+  );
+
 }
