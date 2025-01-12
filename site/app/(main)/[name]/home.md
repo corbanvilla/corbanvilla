@@ -1,8 +1,8 @@
 # About
 
-Corban Villa is interested in **Cybersecurity**, **Mathematics** and **AI**. 
+Corban Villa is interested in **Cybersecurity**, **Systems** and **AI**. 
 
-He currently works in the **[New York University Abu Dhabi Center for Cybersecurity](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-ccs.html)** with **[Professor Christina Pöpper](https://poepper.net/)** on privacy in large language models, and with **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)** on Industrial Control System security. Corban attends the New York University campus in Abu Dhabi to study Computer Science, with an emphasis in Cybersecurity and a minor in Math.
+Corban attends the New York University campus in Abu Dhabi (NYUAD) to study Computer Science, with an emphasis in Cybersecurity and a minor in Math. He works as a student researcher at the **[NYUAD Center for Cybersecurity](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-ccs.html)** with **[Professor Christina Pöpper](https://poepper.net/)** on privacy in large language models, and with **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)** on Industrial Control System security. 
 
 # Recently
 
