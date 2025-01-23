@@ -6,6 +6,7 @@ Corban attends the New York University campus in Abu Dhabi (NYUAD) to study Comp
 
 # Recently
 
+- **January 23rd, 2025:** My first USENIX Security paper was accepted to [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25). 🎉
 - **November 21st, 2024:** My first first-author research paper was accepted to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). Looking forward to presenting it in San Diego! 🎉
 - **September 9th, 2024:** Officially disclosed [my first vulnerability](https://certvde.com/en/advisories/VDE-2024-046/). 🥳
 - **July 15th, 2024:** Attended [PETS 2024](https://petsymposium.org/2024/) with [Shujaat Mirza](https://shujaatmirza.com/) to introduce [our new privacy paper](https://petsymposium.org/popets/2024/popets-2024-0109.pdf). We were honored to be named a runner-up for the Andreas Pfitzmann Best Student Paper Award!
