@@ -15,7 +15,7 @@ function convertTree(tree: Record<string, any>, parentId: string = ''): TreeView
     // Remove .md extension
     key = key.replace(/\.md$/, '');
     const id = parentId ? `${parentId}/${key}` : key;
-    const label = key;
+    const label = key.replace('-', ' ');
 
     if (value && typeof value === 'object') {
       return {
