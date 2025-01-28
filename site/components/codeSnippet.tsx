@@ -25,7 +25,8 @@ export function CodeBlockWithCopy ({ children, match }: { children: ReactNode, m
         <SyntaxHighlighter
           PreTag="div"
           language={match ? match[1] : 'plaintext'}
-          style={oneLight}>
+          style={oneLight}
+          className="text-sm">
           {String(children).replace(/\n$/, '')}
         </SyntaxHighlighter>
       </div>

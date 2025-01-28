@@ -39,7 +39,7 @@ export function RenderedDocsMarkdown({ content, className }: { content: string, 
                 <StyledLink href={href || "/"} className="py-2" >{children}</StyledLink>
             ),
             p: ({ children }) => <p className="">{children}</p>,
-            strong: ({ children }) => <strong className="text-lg mb-4 font-semibold">{children}</strong>,
+            strong: ({ children }) => <strong className="mb-4 font-semibold">{children}</strong>,
             h1: ({ children }) => <h1 className="text-3xl font-medium mb-4 tracking-tight">{children}</h1>,
             h2: ({ children }) => <h2 className="text-2xl font-medium my-4 tracking-tight">{children}</h2>,
             h3: ({ children }) => <h3 className="text-xl font-medium my-4 tracking-tight">{children}</h3>,
@@ -53,7 +53,7 @@ export function RenderedDocsMarkdown({ content, className }: { content: string, 
               const isInline = node?.children[0]?.position !== undefined;
 
               return isInline ? (
-                <code className="bg-gray-100 rounded px-1">{children}</code>
+                <code className="bg-gray-100 rounded px-1 text-base">{children}</code>
               ) : (
                 <CodeBlockWithCopy match={match}>{children}</CodeBlockWithCopy>
               );
