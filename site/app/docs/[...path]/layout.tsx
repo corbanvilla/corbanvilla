@@ -5,9 +5,9 @@ import Icons from "@/components/icons";
 import NavigationItems from "@/components/navigationItems";
 import TableOfContents from "@/components/tableOfContents";
 import { buildDocTree } from "@/components/files";
-import { currentDir } from "@/components/securePaths";
+import { DOCS_PATH } from "@/app/constants";
 
-const dir = currentDir(import.meta.url);
+const dir = DOCS_PATH;
 const docTree = buildDocTree(dir);
 
 function convertTree(tree: Record<string, any>, parentId: string = ''): TreeViewBaseItem[] {

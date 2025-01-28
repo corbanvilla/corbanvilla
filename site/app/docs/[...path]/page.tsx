@@ -1,9 +1,9 @@
 import { notFound } from 'next/navigation';
 import { readFromFile, listMarkdownFilesRecursive, listDirsRecursivelyRelative, buildDocTree } from '../../../components/files';
 import { RenderedDocsMarkdown } from '../../../components/markdown';
-import { currentDir } from '@/components/securePaths';
+import { DOCS_PATH } from '@/app/constants';
 
-const dir = currentDir(import.meta.url);
+const dir = DOCS_PATH;
 const files = listMarkdownFilesRecursive(dir);
 const filepaths = files.map(file => file.replace(/\.md$/, ''));
 const dirpaths = listDirsRecursivelyRelative(dir);
