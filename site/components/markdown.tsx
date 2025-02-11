@@ -53,7 +53,7 @@ export function RenderedDocsMarkdown({ content, className }: { content: string, 
               const isInline = node?.children[0]?.position !== undefined;
 
               return isInline ? (
-                <code className="bg-gray-100 rounded px-1">{children}</code>
+                <code className="bg-gray-100 rounded px-1 text-[0.85em]">{children}</code>
               ) : (
                 <CodeBlockWithCopy match={match}>{children}</CodeBlockWithCopy>
               );
