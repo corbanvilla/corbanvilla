@@ -32,7 +32,6 @@ function convertTree(tree: Record<string, any>, parentId: string = ''): TreeView
   });
 }
 
-
 export default function Layout({
   children,
 }: Readonly<{

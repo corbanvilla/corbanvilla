@@ -47,6 +47,15 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
     const router = useRouter();
     const apiRef = useTreeViewApiRef();
     const path = usePathname().replace(new RegExp(`^${DOCS_URL_PREFIX}/`), '');
+    const pathSegments = useMemo(() => {
+      return path
+      .split('/')
+      .slice(0, -1)  // Remove the last segment
+      .reduce((acc: string[], curr: string, i: number, arr: string[]) => {
+        const path = arr.slice(0, i + 1).join('/');
+        return [...acc, path];
+      }, []);
+    }, []);
 
     const handleSelectedItemsChange = (event: React.SyntheticEvent, ids: string[]) => {
       const newPath = ids;
@@ -66,17 +75,7 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
         router.push(`${DOCS_URL_PREFIX}/${newPath}`);
       }
     };
-  
-    const segments = useMemo(() => {
-      return path
-      .split('/')
-      .slice(0, -1)  // Remove the last segment
-      .reduce((acc: string[], curr: string, i: number, arr: string[]) => {
-        const path = arr.slice(0, i + 1).join('/');
-        return [...acc, path];
-      }, []);
-    }, [path]);
-    
+
     return (
       <div className="flex flex-col">
         <StyledLink href={DOCS_URL_PREFIX} className="text-black" self={true}>
@@ -93,7 +92,7 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
               apiRef={apiRef}
               /* @ts-ignore */
               onSelectedItemsChange={handleSelectedItemsChange}
-              defaultExpandedItems={segments}
+              defaultExpandedItems={pathSegments}
               selectedItems={path}
             />
         </Box>
