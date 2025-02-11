@@ -1,4 +1,5 @@
 "use client"
+import { useMemo } from 'react';
 import { StyledLink } from './styledLink';
 import { useRouter, usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
@@ -66,13 +67,15 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
       }
     };
   
-    const segments = path
+    const segments = useMemo(() => {
+      return path
       .split('/')
       .slice(0, -1)  // Remove the last segment
       .reduce((acc: string[], curr: string, i: number, arr: string[]) => {
         const path = arr.slice(0, i + 1).join('/');
         return [...acc, path];
       }, []);
+    }, [path]);
     
     return (
       <div className="flex flex-col">
