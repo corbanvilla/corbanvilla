@@ -19,14 +19,11 @@ export default async function Page(props: { params: Promise<{ path: string[] }> 
   const params = await props.params;
   const pathString = params.path.join('/');
 
-  // File rendering
   let markdownFile: string;
+  
+  // File rendering
   if (filepaths.includes(pathString)) {
     markdownFile = `${dir}/${pathString}.md`;
-
-  // Directory rendering
-  } else if (dirpaths.includes(pathString)) {
-    markdownFile = `${dir}/${pathString}/README.md`;
 
   // Path not found
   } else {

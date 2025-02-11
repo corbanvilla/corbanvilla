@@ -1,6 +1,5 @@
 "use client"
 import { StyledLink } from './styledLink';
-import { useEffect, useMemo } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import Box from '@mui/material/Box';
 import { TreeViewBaseItem } from '@mui/x-tree-view/models';
@@ -50,40 +49,30 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
 
     const handleSelectedItemsChange = (event: React.SyntheticEvent, ids: string[]) => {
       const newPath = ids;
+      
+      // Since multiselect is disabled, this will never run
       if (Array.isArray(newPath)) {
         return;
       }
+
+      // Do not navigate if the item has children (is a folder)
+      if (apiRef.current?.getItem(newPath)?.children) {
+        return;
+      }
+
+      // Navigate to the selected page
       if (newPath !== path) {
         router.push(`${DOCS_URL_PREFIX}/${newPath}`);
       }
     };
   
-    useEffect(() => {
-      const event = new Event('syntheticEvent') as unknown as React.SyntheticEvent;
-  
-      const segments = path.split("/");
-  
-      let delay = 0;
-      let delayIncrement = 50;
-      segments.forEach((_, index) => {
-        const currentPath = segments.slice(0, index + 1).join("/");
-        setTimeout(() => {
-          apiRef.current?.setItemExpansion(event, currentPath, true);
-          // const itemId = currentPath;
-          // const keepExistingSelection = true;
-          // const shouldBeSelected = true;
-          // apiRef.current?.selectItem({event, itemId, keepExistingSelection, shouldBeSelected });
-        }, (delay += delayIncrement));
-      });
-      
-      setTimeout(() => {
-        const itemId = path;
-        const keepExistingSelection = true;
-        const shouldBeSelected = true;
-        apiRef.current?.selectItem({event, itemId, keepExistingSelection, shouldBeSelected });
-      }, (delay += delayIncrement));
-      
-    }, [path, apiRef]);
+    const segments = path
+      .split('/')
+      .slice(0, -1)  // Remove the last segment
+      .reduce((acc: string[], curr: string, i: number, arr: string[]) => {
+        const path = arr.slice(0, i + 1).join('/');
+        return [...acc, path];
+      }, []);
     
     return (
       <div className="flex flex-col">
@@ -101,7 +90,8 @@ export default function TableOfContents({ items }: { items: TreeViewBaseItem[] }
               apiRef={apiRef}
               /* @ts-ignore */
               onSelectedItemsChange={handleSelectedItemsChange}
-              // selectedItems={selectedItems}
+              defaultExpandedItems={segments}
+              selectedItems={path}
             />
         </Box>
       </div>
