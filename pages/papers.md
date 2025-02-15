@@ -22,7 +22,7 @@
 - **[SAINTCON Container Security Village.](https://github.com/corbanvilla/saintcon-container-village)** <br>
   <sup>Security Advisory and Incident Network Team Conference, 2020.</sup>
 
-- **[Bluetooth: From basics to vulnerabilities.](https://www.youtube.com/watch?v=fAKizRuEQOw)** <br>
+- **[Bluetooth: From Basics to Vulnerabilities.](https://www.youtube.com/watch?v=fAKizRuEQOw)** <br>
   <sup>Security Advisory and Incident Network Team Conference, 2018.</sup>
 
 - **[Arm-Mounted Bluetooth Attack Platform.](https://www.youtube.com/watch?v=4o9nKWI0lXM)** <br>
