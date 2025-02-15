@@ -16,6 +16,9 @@
 
 # Industry Conferences
 
+- **[Intro. to Facial Recognition with Python.](https://www.shetechexplorer.com/workshop-utos-artificial-intelligence-and-machine-learning/)** <br>
+  <sup>SheTech Explorer Day, 2021.</sup>
+
 - **[SAINTCON Container Security Village.](https://github.com/corbanvilla/saintcon-container-village)** <br>
   <sup>Security Advisory and Incident Network Team Conference, 2020.</sup>
 

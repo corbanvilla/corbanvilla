@@ -15,11 +15,12 @@ export default function RenderedMarkdown({ content }: { content: string }) {
             a: ({ href, title, children }) => (
                 <StyledLink href={href || "/"} className="py-2" >{children}</StyledLink>
             ),
-            p: ({ children }) => <p className="mb-4 md:mb-6">{children}</p>,
+            p: ({ children }) => <p className="mb-2 md:mb-4">{children}</p>,
             strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
             h1: ({ children }) => <h1 className="text-2xl font-medium mb-4 tracking-tight">{children}</h1>,
             ul: ({ children }) => <ul className="list-disc pl-4">{children}</ul>,
             li: ({ children }) => <li className="mb-2">{children}</li>,
+            sup: ({ children }) => <sup className="inline-block leading-snug pt-2">{children}</sup>,
         }}
       >
         {content}
