@@ -52,16 +52,21 @@ export default {
             return originResponse;
         }
 
-        // if it's not under /public, don't index it
+        // if it's not under /public, don't index it, redirect to homepage
         if (!path.startsWith('/public')) {
             return buildRedirect(path);
         }
 
         // remove the leading '/'
-        const objectKey = path.slice(1);
+        let objectKey = path.slice(1);
         const siteConfig = getSiteConfig(env, domain);
         if (!siteConfig) {
             return originResponse;
+        }
+
+        // add a trailing / if not exist
+        if (!objectKey.endsWith('/')) {
+            objectKey += '/';
         }
 
         // list objects in the bucket
