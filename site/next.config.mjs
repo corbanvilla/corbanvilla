@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
-import redirectsMap from './redirects.json' assert {type: 'json'};
-import rewritesMap from './rewrites.json' assert {type: 'json'};
+import redirectsMap from './redirects.json' with {type: 'json'};
+import rewritesMap from './rewrites.json' with {type: 'json'};
 
 const nextConfig = {
     redirects: async () => {
