@@ -2,17 +2,45 @@
 
 # 🙋 `whoami`
 
-**Corban Villa** is interested in **Cybersecurity**, **Mathematics** and **AI**. He currently works in the [NYU Abu Dhabi Center for Cybersecurity](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-ccs.html) with Professor [Christina Pöpper](https://poepper.net/) and Professor [Michail Maniatakos](https://wp.nyu.edu/momalab/industrial-control-systems-security/) applications and attends the New York University campus in Abu Dhabi to study Computer Science, specializing in Cybersecurity.
+Corban Villa is interested in **Cybersecurity**, **Systems** and **AI**. 
 
-### 📃 Resume
+Corban attends the New York University campus in Abu Dhabi (NYUAD) to study Computer Science, with an emphasis in Cybersecurity and a minor in Math. He works as a student researcher at the **[NYUAD Center for Cybersecurity](https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/nyuad-ccs.html)** with **[Professor Christina Pöpper](https://poepper.net/)** on privacy in large language models, and with **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)** on Industrial Control System security. 
 
-[📎 Check out my resume.](https://resources.corbanvilla.com/CorbanVillaResume.pdf)
+### 📃 CV
+
+[📎 Check out my CV.](https://resources.corbanvilla.com/CorbanVillaCV.pdf)
 
 ### 💬 Contact
 
 - [📨 hello@corbanvilla.com](mailto:hello@corbanvilla.com)
 - [👥 Linkedin](https://www.linkedin.com/in/corbanvilla/)
 - [🐦 Twitter](https://twitter.com/Animcogn)
+
+### Peer-Reviewed Publications
+
+- **Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL·E Text-to-Image Pipelines.** <br>
+  <sup>To appear in the USENIX Security Symposium, 2025.</sup>
+
+- **ICSQuartz: Scan Cycle-Aware and Vendor-Agnostic Fuzzing for Industrial Control Systems.** <br>
+  <sup>To appear in the NDSS Symposium, 2025.</sup>
+
+- **[Media talks Privacy: Unraveling a Decade of Privacy Discourse around the World.](https://petsymposium.org/popets/2024/popets-2024-0109.pdf)** <br>
+  <sup>In Proceedings of the Privacy Enhancing Technologies Symposium, 2024.</sup>
+
+###  Acknowledged Contributions
+
+- **[CodexLeaks: Privacy Leaks from Code Generation Language Models in GitHub Copilot.](https://www.usenix.org/system/files/usenixsecurity23-niu.pdf)** <br>
+  <sup>In Proceedings of the USENIX Security Symposium, 2023.</sup>
+
+# Industry Conferences
+- **[SAINTCON Container Security Village.](https://github.com/corbanvilla/saintcon-container-village)** <br>
+  <sup>Security Advisory and Incident Network Team Conference, 2020.</sup>
+
+- **[Bluetooth: From basics to vulnerabilities.](https://www.youtube.com/watch?v=fAKizRuEQOw)** <br>
+  <sup>Security Advisory and Incident Network Team Conference, 2018.</sup>
+
+- **[Arm-Mounted Bluetooth Attack Platform.](https://www.youtube.com/watch?v=4o9nKWI0lXM)** <br>
+  <sup>DEF CON 25 Rootz Asylum, 2017.</sup>
 
 # 🧑‍🏫 Projects
 
