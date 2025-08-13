@@ -1,13 +1,13 @@
 # Peer-Reviewed Publications
 
 - **[Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL·E Text-to-Image Pipelines.](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-746-villa.pdf)** <br>
-  <sup>In Proceedings of the USENIX Security Symposium, 2025.</sup>
+  <sup>In Proceedings of the USENIX Security Symposium, 2025.<br>**Distinguished Artifact Award Winner.**</sup>
 
 - **[ICSQuartz: Scan Cycle-Aware and Vendor-Agnostic Fuzzing for Industrial Control Systems.](https://www.ndss-symposium.org/wp-content/uploads/2025-795-paper.pdf)** <br>
   <sup>In Proceedings of the Network and Distributed System Security (NDSS) Symposium, 2025.</sup>
 
 - **[Media talks Privacy: Unraveling a Decade of Privacy Discourse around the World.](https://petsymposium.org/popets/2024/popets-2024-0109.pdf)** <br>
-  <sup>In Proceedings of the Privacy Enhancing Technologies Symposium, 2024.</sup>
+  <sup>In Proceedings of the Privacy Enhancing Technologies Symposium, 2024.<br>**Runner-up for the Andreas Pfitzmann Best Student Paper Award.**</sup>
 
 # Acknowledged Contributions
 
