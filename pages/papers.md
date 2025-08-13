@@ -1,7 +1,7 @@
 # Peer-Reviewed Publications
 
-- **Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL·E Text-to-Image Pipelines.** <br>
-  <sup>To appear in the USENIX Security Symposium, 2025.</sup>
+- **[Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL·E Text-to-Image Pipelines.](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-746-villa.pdf)** <br>
+  <sup>In Proceedings of the USENIX Security Symposium, 2025.</sup>
 
 - **[ICSQuartz: Scan Cycle-Aware and Vendor-Agnostic Fuzzing for Industrial Control Systems.](https://www.ndss-symposium.org/wp-content/uploads/2025-795-paper.pdf)** <br>
   <sup>In Proceedings of the Network and Distributed System Security (NDSS) Symposium, 2025.</sup>
