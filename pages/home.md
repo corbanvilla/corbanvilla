@@ -1,12 +1,12 @@
 # About
 
-Corban is an incoming **PhD student at UC Berkeley** (Fall 2025), working with **[Professor Raluca Ada Popa](https://people.eecs.berkeley.edu/~raluca/)** on **Security for AI Systems**. Corban recently completed his undergraduate at New York University Abu Dhabi (NYUAD) studying computer science and working with **[Professor Christina Pöpper](https://poepper.net/)** and **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)**.
+Corban is an incoming **PhD student at UC Berkeley** (Fall 2025), working with **[Professor Raluca Ada Popa](https://people.eecs.berkeley.edu/~raluca/)** on **Security for AI Systems**. Corban recently completed his undergraduate at New York University studying computer science and working with **[Professor Christina Pöpper](https://poepper.net/)** and **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)**.
 
 # Recently
 
 - **August 27th, 2025:** I am excited to begin my PhD at UC Berkeley this Fall as a Chancellor's Fellowship recipient!
 - **August 13th, 2025:** I am presenting [my first USENIX Security Paper](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-746-villa.pdf).
-- **May 22nd, 2025:** I completed my undergradate at NYU Abu Dhabi, and was honored to receive the annual [Piano Prize](https://nyuad.nyu.edu/content/dam/nyuad/commencement/commencement-2025/documents/2025-commencement-program.pdf#page=21).
+- **May 22nd, 2025:** I completed my undergradate at NYU, and was honored to receive the annual [Piano Prize](https://nyuad.nyu.edu/content/dam/nyuad/commencement/commencement-2025/documents/2025-commencement-program.pdf#page=21).
 - **February 24th, 2025:** I presented [my first first-author research paper](https://www.ndss-symposium.org/wp-content/uploads/2025-795-paper.pdf) at [NDSS 2025](https://www.ndss-symposium.org/ndss2025/).
   <!-- - **January 23rd, 2025:** My first USENIX Security paper was accepted to [USENIX Security 2025](https://www.usenix.org/conference/usenixsecurity25). 🎉 -->
   <!-- - **November 21st, 2024:** My first first-author research paper was accepted to [NDSS 2025](https://www.ndss-symposium.org/ndss2025/). Looking forward to presenting it in San Diego! 🎉 -->
