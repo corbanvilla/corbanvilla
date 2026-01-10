@@ -1,0 +1,7 @@
+# Rewrites (200 = rewrite, URL stays the same)
+/ /home 200
+/docs /docs/README 200
+
+# Redirects (307 = temporary redirect)
+/research /papers 307
+/t2i https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-746-villa.pdf 307
