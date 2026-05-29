@@ -1,9 +1,12 @@
 # About
 
-Corban is a **first-year PhD student at UC Berkeley**, working with **[Professor Raluca Ada Popa](https://people.eecs.berkeley.edu/~raluca/)** on **Security for AI Systems**, and co-organizes the **[UC Berkeley Security Seminar](https://security.cs.berkeley.edu/seminar/current.html)**. Corban recently completed his undergraduate at New York University studying computer science and working with **[Professor Christina Pöpper](https://poepper.net/)** and **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)**.
+Corban is a **first-year PhD student at UC Berkeley**, working with **[Professor Raluca Ada Popa](https://people.eecs.berkeley.edu/~raluca/)** on **AI for security and security for AI**. He founded the **[Berkeley Vulnerability Initiative](https://vuln.cs.berkeley.edu/)**, and co-organizes the **[UC Berkeley Security Seminar](https://security.cs.berkeley.edu/seminar/current.html)**.
+
+Corban completed his undergraduate at New York University studying computer science and working with **[Professor Christina Pöpper](https://poepper.net/)** and **[Professor Michail Maniatakos](https://wp.nyu.edu/momalab/)**.
 
 # Recently
 
+- **May 27th, 2026:** Launched the **[Berkeley Vulnerability Initiative](https://vuln.cs.berkeley.edu/)**.
 - **August 27th, 2025:** I am excited to begin my PhD at UC Berkeley this Fall as a Chancellor's Fellowship recipient!
 - **August 13th, 2025:** I am presenting [my first USENIX Security Paper](https://www.usenix.org/system/files/conference/usenixsecurity25/sec25cycle1-prepub-746-villa.pdf).
 - **May 22nd, 2025:** I completed my undergradate at NYU, and was honored to receive the annual [Piano Prize](https://nyuad.nyu.edu/content/dam/nyuad/commencement/commencement-2025/documents/2025-commencement-program.pdf#page=21).
